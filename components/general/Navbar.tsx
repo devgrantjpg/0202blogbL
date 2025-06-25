@@ -22,7 +22,7 @@ export async function Navbar() {
                 CodeGit
                 </Link>
                  <Link href="/books" className="text sm font-medium hover:text-blue-500 transition-colors">
-                Featured Products
+                Books
                 </Link>
 
              </div>
