@@ -77,20 +77,20 @@ export default function Home() {
         >
           {/* Product cards */}
           {[
-            { href: './circe', src: '/electronics/15.6laptop.jpeg', label: '15.6" Windows Laptop' },
-            { href: './thelordoftherings', src: '/electronics/coolingpad.jpg', label: 'Cooling Pad For 15.6 Laptop' },
-            { href: './aworldalone', src: '/electronics/gamingHeadphones.png', label: 'Gaming Headphones' },
-            { href: './lovestory', src: '/electronics/jblearbudsBlack.png', label: 'JBL Earphones Black' },
-            { href: './thebookofdoors', src: '/electronics/jblEarbudsBlue.png', label: 'JBL Earphones Blue' },
-            { href: './funnystory', src: '/electronics/jblEarbudsWhite.png', label: 'JBL Earphones White' },
-            { href: './thehauntedcar', src: '/electronics/RGBgamingHeadset.png', label: 'RGB Gaming Headset' },
+            { href: '', src: '/electronics/15.6laptop.jpeg', label: '15.6" Windows Laptop' },
+            { href: '', src: '/electronics/coolingpad.jpg', label: 'Cooling Pad For 15.6 Laptop' },
+            { href: '', src: '/electronics/gamingHeadphones.png', label: 'Gaming Headphones' },
+            { href: '', src: '/electronics/jblearbudsBlack.png', label: 'JBL Earphones Black' },
+            { href: '', src: '/electronics/jblEarbudsBlue.png', label: 'JBL Earphones Blue' },
+            { href: '', src: '/electronics/jblEarbudsWhite.png', label: 'JBL Earphones White' },
+            { href: '', src: '/electronics/RGBgamingHeadset.png', label: 'RGB Gaming Headset' },
             { href: '', src: '/electronics/sonyEarbuds.png', label: 'Sony Earphones' },
-            { href: './themummystomb', src: '/electronics/sonyHeadphones.png', label: 'Sony Headphones' },
+            { href: '', src: '/electronics/sonyHeadphones.png', label: 'Sony Headphones' },
             { href: '', src: '/electronics/sonyHeadphones3.png', label: 'Sony Headphones' },
-            { href: './sololeveling12', src: '/electronics/sonyHeadphones4.png', label: 'Sony Headphones' },
-            { href: './sololeveling11', src: '/electronics/digitalCamera.png', label: 'Digital Camera' },
-            { href: './mars', src: '/electronics/digitalCamera2.png', label: 'Digital Camera' },
-            { href: './agameofThrones', src: '/electronics/digitalminiZoomCamera.png', label: 'Digital Camera' },
+            { href: '', src: '/electronics/sonyHeadphones4.png', label: 'Sony Headphones' },
+            { href: '', src: '/electronics/digitalCamera.png', label: 'Digital Camera' },
+            { href: '', src: '/electronics/digitalCamera2.png', label: 'Digital Camera' },
+            { href: '', src: '/electronics/digitalminiZoomCamera.png', label: 'Digital Camera' },
             { href: '', src: '/electronics/digitalminiCameraZoom2.png', label: 'Digital Camera' },
             { href: '', src: '/electronics/digitalModernCamled.png', label: 'Digital Camera' }
           ].map(({ href, src, label }, idx) => (
