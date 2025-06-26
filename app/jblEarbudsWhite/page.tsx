@@ -63,7 +63,7 @@ export default function Lovestory() {
     <div style={styles.container}>
       {/* 🖼 Smaller image row with horizontal scroll */}
       <div style={styles.imageRow}>
-        {["jblearbuds", "JBLearbudsWhite"].map((img, i) => (
+        {["JBLearbuds", "jblEearbudsWhite"].map((img, i) => (
           <div style={styles.imageWrapper} key={i}>
             <Image
               src={`/electronics/${img}.png`}
