@@ -78,11 +78,11 @@ export default function Lovestory() {
 
       {/* 📝 Description */}
       <p style={styles.description}>
-      Original JBL TUNE 220 TWS True Wireless Bluetooth Earphones T220TWS Stereo Earbuds Bass Sound Headphones JBL
+      Sony WF-1000XM5 TWS Wireless Bluetooth Earphones Noise Canceling Earbuds with Alexa Built-in
       </p>
 
       <p style={styles.description}>
-      Earbuds — $39.99 CAD<br />
+      Earbuds — $58.99 CAD<br />
         Wireless<br />
         JBL<br />
       </p>
