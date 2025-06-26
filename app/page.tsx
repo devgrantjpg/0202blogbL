@@ -84,7 +84,7 @@ export default function Home() {
             { href: 'jblEarbudsBlue', src: '/electronics/jblEarbudsBlue.png', label: 'JBL Earphones Blue' },
             { href: 'jblEarbudsWhite', src: '/electronics/jblEarbudsWhite.png', label: 'JBL Earphones White' },
             { href: 'RGBgamingHeadset', src: '/electronics/RGBgamingHeadset.png', label: 'RGB Gaming Headset' },
-            { href: '', src: '/electronics/sonyEarbuds.png', label: 'Sony Earphones' },
+            { href: 'sonyEarbuds', src: '/electronics/sonyEarbuds.png', label: 'Sony Earphones' },
             { href: '', src: '/electronics/sonyHeadphones.png', label: 'Sony Headphones' },
             { href: '', src: '/electronics/sonyHeadphones3.png', label: 'Sony Headphones' },
             { href: '', src: '/electronics/sonyHeadphones4.png', label: 'Sony Headphones' },

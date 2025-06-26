@@ -84,7 +84,7 @@ export default function Lovestory() {
       <p style={styles.description}>
       Earbuds — $39.99 CAD<br />
         Wireless<br />
-        JBL<br />a
+        JBL<br />
       </p>
 
       <p style={{ color: '#bbb' }}>Tax included</p>
