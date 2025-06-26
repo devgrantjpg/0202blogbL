@@ -63,7 +63,7 @@ export default function Lovestory() {
     <div style={styles.container}>
       {/* 🖼 Smaller image row with horizontal scroll */}
       <div style={styles.imageRow}>
-        {["justthink8gb", "lapTop"].map((img, i) => (
+        {["RGBgamingHeadset", "RGBgamingHeadset2", "RGBgamingHeadset3"].map((img, i) => (
           <div style={styles.imageWrapper} key={i}>
             <Image
               src={`/electronics/${img}.png`}
@@ -78,11 +78,11 @@ export default function Lovestory() {
 
       {/* 📝 Description */}
       <p style={styles.description}>
-      Gaming Laptop 15.6 Inch Celeron N5095 Windows 11 IPS One Key Fingerprint 16GB DDR4 RAM SSD Unlock Laptops
+       Dynamic RGB Gaming Headset with Mic Over-Ear Headphones 7.1 Surround Sound Computer Desktop PS4 PS5
       </p>
 
       <p style={styles.description}>
-      Earbuds — $379.99 CAD<br />
+      Earbuds — $59.99 CAD<br />
         Wireless<br />
         JBL<br />
       </p>

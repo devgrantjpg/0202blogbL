@@ -63,7 +63,7 @@ export default function Lovestory() {
     <div style={styles.container}>
       {/* 🖼 Smaller image row with horizontal scroll */}
       <div style={styles.imageRow}>
-        {["justthink8gb", "lapTop"].map((img, i) => (
+        {["jblearbuds", "JBLearbudsWhite"].map((img, i) => (
           <div style={styles.imageWrapper} key={i}>
             <Image
               src={`/electronics/${img}.png`}
@@ -78,11 +78,11 @@ export default function Lovestory() {
 
       {/* 📝 Description */}
       <p style={styles.description}>
-      Gaming Laptop 15.6 Inch Celeron N5095 Windows 11 IPS One Key Fingerprint 16GB DDR4 RAM SSD Unlock Laptops
+      Original JBL TUNE 220 TWS True Wireless Bluetooth Earphones T220TWS Stereo Earbuds Bass Sound Headphones JBL
       </p>
 
       <p style={styles.description}>
-      Earbuds — $379.99 CAD<br />
+      Earbuds — $39.99 CAD<br />
         Wireless<br />
         JBL<br />
       </p>

@@ -77,13 +77,13 @@ export default function Home() {
         >
           {/* Product cards */}
           {[
-            { href: '', src: '/electronics/15.6laptop.jpeg', label: '15.6" Windows Laptop' },
-            { href: '', src: '/electronics/coolingpad.jpg', label: 'Cooling Pad For 15.6 Laptop' },
-            { href: '', src: '/electronics/gamingHeadphones.png', label: 'Gaming Headphones' },
-            { href: '', src: '/electronics/jblearbudsBlack.png', label: 'JBL Earphones Black' },
-            { href: '', src: '/electronics/jblEarbudsBlue.png', label: 'JBL Earphones Blue' },
-            { href: '', src: '/electronics/jblEarbudsWhite.png', label: 'JBL Earphones White' },
-            { href: '', src: '/electronics/RGBgamingHeadset.png', label: 'RGB Gaming Headset' },
+            { href: 'laptop', src: '/electronics/lapTop.png', label: '15.6" Windows Laptop' },
+            { href: 'coolingpad', src: '/electronics/coolingpad.png', label: 'Cooling Pad For 15.6 Laptop' },
+            { href: 'gamingHeadphones', src: '/electronics/gamingHeadphones.png', label: 'Gaming Headphones' },
+            { href: 'jblEarbudsBlack', src: '/electronics/jblearbudsBlack.png', label: 'JBL Earphones Black' },
+            { href: 'jblEarbudsBlue', src: '/electronics/jblEarbudsBlue.png', label: 'JBL Earphones Blue' },
+            { href: 'jblEarbudsWhite', src: '/electronics/jblEarbudsWhite.png', label: 'JBL Earphones White' },
+            { href: 'RGBgamingHeadset', src: '/electronics/RGBgamingHeadset.png', label: 'RGB Gaming Headset' },
             { href: '', src: '/electronics/sonyEarbuds.png', label: 'Sony Earphones' },
             { href: '', src: '/electronics/sonyHeadphones.png', label: 'Sony Headphones' },
             { href: '', src: '/electronics/sonyHeadphones3.png', label: 'Sony Headphones' },
