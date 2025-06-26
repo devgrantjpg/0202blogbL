@@ -82,7 +82,7 @@ export default function Lovestory() {
       </p>
 
       <p style={styles.description}>
-      Earbuds — $379.99 CAD<br />
+      Brand: Justthink Laptops — $379.99 CAD<br />
         Wireless<br />
         JBL<br />
       </p>
