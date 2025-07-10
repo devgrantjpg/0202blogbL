@@ -9,11 +9,11 @@ export async function Navbar() {
     return (
         <nav className="py-5 flex items-center justify-between">
             <div className="flex items-center gap-6">
-             <Link href="/">
+             {/* <Link href="/">
                              <h1 className="text-3xl flex items-center gap-6">
-                    <span className="text-blue-500">-----SMVM-</span>
+                    <span className="text-blue-500">SMVM</span>
                 </h1>
-             </Link>
+             </Link> */}
              <div className="hidden sm:flex items-center gap-6">
                 <Link href="/" className="text sm font-medium hover:text-blue-500 transition-colors">
                 Home 

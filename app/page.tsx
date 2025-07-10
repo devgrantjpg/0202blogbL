@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   const backgroundImages = [
-    '/bookimgs/BACKgroundnyc.png',
+    '/bookimgs/BACKgroundnyc.jpg',
     '/bookimgs/BACKgroundnyc3.jpg',
     '/bookimgs/BACKgroundtown.jpg',
   ];
@@ -86,6 +86,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Electronics Section */}
       <section style={{ padding: '2rem', backgroundColor: '#000', color: '#fff' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Electronics</h2>
         <div
@@ -123,96 +124,57 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* Manual Scroll Horizontal Section with Scroll Buttons */}
-      <section style={{ position: 'relative', width: '100%', background: '#111', paddingBottom: '2rem' }}>
-        <div style={{ padding: '1rem 2rem' }}>
-          <h3 style={{ color: '#fff', textAlign: 'center' }}>Featured Industrial Products</h3>
-        </div>
 
-        {/* Left Scroll Button */}
-        <button
-          onClick={() => scroll('left')}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '0',
-            transform: 'translateY(-50%)',
-            zIndex: 10,
-            backgroundColor: 'rgba(0,0,0,0.6)',
-            border: 'none',
-            borderRadius: '50%',
-            width: '40px',
-            height: '40px',
-            color: '#fff',
-            fontSize: '24px',
-            cursor: 'pointer',
-            marginLeft: '10px',
-          }}
-          aria-label="Scroll Left"
-        >
-          ‹
-        </button>
+    
 
-        {/* Right Scroll Button */}
-        <button
-          onClick={() => scroll('right')}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            right: '0',
-            transform: 'translateY(-50%)',
-            zIndex: 10,
-            backgroundColor: 'rgba(0,0,0,0.6)',
-            border: 'none',
-            borderRadius: '50%',
-            width: '40px',
-            height: '40px',
-            color: '#fff',
-            fontSize: '24px',
-            cursor: 'pointer',
-            marginRight: '10px',
-          }}
-          aria-label="Scroll Right"
-        >
-          ›
-        </button>
-
-        {/* Scrollable Container */}
+      {/* Featured Product Background Section */}
+      <section
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '400px',
+          backgroundImage: 'url(/industrial/lasermachine.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          marginTop: '2rem',
+        }}
+      >
         <div
-          ref={scrollContainerRef}
           style={{
-            overflowX: 'auto',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
             display: 'flex',
-            gap: '1rem',
-            padding: '1rem 2rem',
-            scrollSnapType: 'x mandatory',
-            scrollBehavior: 'smooth',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '2rem',
           }}
         >
-          {backgroundLinks.map(({ src, href }, index) => (
-            <Link
-              href={href}
-              key={index}
-              style={{
-                flex: '0 0 auto',
-                width: '100%',
-                maxWidth: '400px',
-                scrollSnapAlign: 'start',
-              }}
-            >
-              <div
+          <div style={{ color: 'white' }}>
+            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Featured Industrial Products</h2>
+            <p style={{ fontSize: '1.2rem', marginBottom: '1.5rem' }}>
+              Innovation and Quality in one package.
+            </p>
+            <Link href="/featured-product">
+              <button
                 style={{
-                  width: '100%',
-                  height: '300px',
-                  backgroundImage: `url(${src})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  borderRadius: '10px',
+                  padding: '0.75rem 1.5rem',
+                  backgroundColor: '#ff6600',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '5px',
+                  fontSize: '1rem',
                   cursor: 'pointer',
                 }}
-              />
+              >
+                Products
+              </button>
             </Link>
-          ))}
+          </div>
         </div>
       </section>
     </div>
