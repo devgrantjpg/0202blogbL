@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   const backgroundImages = [
-    '/bookimgs/BACKgroundnyc.jpg',
+    '/bookimgs/BACKgroundnyc.png',
     '/bookimgs/BACKgroundnyc3.jpg',
     '/bookimgs/BACKgroundtown.jpg',
   ];
@@ -33,9 +33,10 @@ export default function Home() {
   const backgroundLinks = [
     { src: '/industrial/CNCmachine.png', href: '/' },
     { src: '/industrial/IndustrialMachines.png', href: '/' },
-    { src: '/industrial/milling.png', href: '/' },
-    { src: '/industrial/welderPositioning.png', href: '/' },
-    { src: '/industrial/tablesaw.png', href: '/' },
+    { src: '/industrial/IndustrialMachines.png', href: '/' },
+    { src: '/industrial/CNCmachine.png', href: '/' },
+    { src: '/industrial/IndustrialMachines.png', href: '/' },
+    { src: '/industrial/IndustrialMachines.png', href: '/' },
   ];
 
   return (
