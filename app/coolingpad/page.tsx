@@ -80,6 +80,7 @@ export default function Lovestory() {
       <p style={styles.description}>
       IETS Coolingpad 15” to 17.3" Gaming Notebooks
       </p>
+      
 
       <p style={styles.description}>
      Gaming Headset — $143.99 CAD<br />
