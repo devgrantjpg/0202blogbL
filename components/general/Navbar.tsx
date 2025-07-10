@@ -11,7 +11,7 @@ export async function Navbar() {
             <div className="flex items-center gap-6">
              <Link href="/">
                              <h1 className="text-3xl flex items-center gap-6">
-                    <span className="text-blue-500">SMVM</span>
+                    <span className="text-blue-500">-----SMVM-</span>
                 </h1>
              </Link>
              <div className="hidden sm:flex items-center gap-6">

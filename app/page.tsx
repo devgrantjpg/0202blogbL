@@ -1,11 +1,19 @@
+'use client';
+
 import Link from 'next/link';
+import { useRef } from 'react';
 
 export default function Home() {
-  const backgroundImages = [
-    '/bookimgs/BACKgroundcitymix.jpg',
-    '/bookimgs/BACKgroundnyc3.jpg',
-    '/bookimgs/BACKgroundtown.jpg',
-  ];
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (!scrollContainerRef.current) return;
+    const scrollAmount = 400;
+    scrollContainerRef.current.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth',
+    });
+  };
 
   const productImageStyle = {
     width: '240px',
@@ -16,9 +24,23 @@ export default function Home() {
     margin: '0 auto',
   };
 
+  const backgroundImages = [
+    '/bookimgs/BACKgroundnyc.jpg',
+    '/bookimgs/BACKgroundnyc3.jpg',
+    '/bookimgs/BACKgroundtown.jpg',
+  ];
+
+  const backgroundLinks = [
+    { src: '/industrial/CNCmachine.png', href: '/' },
+    { src: '/industrial/IndustrialMachines.png', href: '/' },
+    { src: '/industrial/milling.png', href: '/' },
+    { src: '/industrial/welderPositioning.png', href: '/' },
+    { src: '/industrial/tablesaw.png', href: '/' },
+  ];
+
   return (
     <div style={{ fontFamily: 'Arial, sans-serif' }}>
-      {/* Background section */}
+      {/* Hero Section */}
       <section style={{ position: 'relative', width: '100%', height: '100vh' }}>
         <div style={{ display: 'flex', width: '100%', height: '100%' }}>
           {backgroundImages.map((src, index) => (
@@ -34,7 +56,6 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Gradient text box */}
         <div
           style={{
             position: 'absolute',
@@ -64,9 +85,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product section with black background */}
       <section style={{ padding: '2rem', backgroundColor: '#000', color: '#fff' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Our Products</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Electronics</h2>
         <div
           style={{
             display: 'grid',
@@ -75,7 +95,6 @@ export default function Home() {
             justifyItems: 'center',
           }}
         >
-          {/* Product cards */}
           {[
             { href: 'laptop', src: '/electronics/lapTop.png', label: '15.6" Windows Laptop' },
             { href: 'coolingpad', src: '/electronics/coolingpad.png', label: 'Cooling Pad For 15.6 Laptop' },
@@ -92,13 +111,105 @@ export default function Home() {
             { href: '', src: '/electronics/digitalCamera2.png', label: 'Digital Camera' },
             { href: '', src: '/electronics/digitalminiZoomCamera.png', label: 'Digital Camera' },
             { href: '', src: '/electronics/digitalminiCameraZoom2.png', label: 'Digital Camera' },
-            { href: '', src: '/electronics/digitalModernCamled.png', label: 'Digital Camera' }
+            { href: '', src: '/electronics/digitalModernCamled.png', label: 'Digital Camera' },
           ].map(({ href, src, label }, idx) => (
-            <Link href={href} key={idx}>
+            <Link href={href || '#'} key={idx}>
               <div style={{ textAlign: 'center', cursor: 'pointer' }}>
                 <img src={src} alt={label} style={productImageStyle} />
                 <p>{label}</p>
               </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+      {/* Manual Scroll Horizontal Section with Scroll Buttons */}
+      <section style={{ position: 'relative', width: '100%', background: '#111', paddingBottom: '2rem' }}>
+        <div style={{ padding: '1rem 2rem' }}>
+          <h3 style={{ color: '#fff', textAlign: 'center' }}>Featured Industrial Products</h3>
+        </div>
+
+        {/* Left Scroll Button */}
+        <button
+          onClick={() => scroll('left')}
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '0',
+            transform: 'translateY(-50%)',
+            zIndex: 10,
+            backgroundColor: 'rgba(0,0,0,0.6)',
+            border: 'none',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            color: '#fff',
+            fontSize: '24px',
+            cursor: 'pointer',
+            marginLeft: '10px',
+          }}
+          aria-label="Scroll Left"
+        >
+          ‹
+        </button>
+
+        {/* Right Scroll Button */}
+        <button
+          onClick={() => scroll('right')}
+          style={{
+            position: 'absolute',
+            top: '50%',
+            right: '0',
+            transform: 'translateY(-50%)',
+            zIndex: 10,
+            backgroundColor: 'rgba(0,0,0,0.6)',
+            border: 'none',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            color: '#fff',
+            fontSize: '24px',
+            cursor: 'pointer',
+            marginRight: '10px',
+          }}
+          aria-label="Scroll Right"
+        >
+          ›
+        </button>
+
+        {/* Scrollable Container */}
+        <div
+          ref={scrollContainerRef}
+          style={{
+            overflowX: 'auto',
+            display: 'flex',
+            gap: '1rem',
+            padding: '1rem 2rem',
+            scrollSnapType: 'x mandatory',
+            scrollBehavior: 'smooth',
+          }}
+        >
+          {backgroundLinks.map(({ src, href }, index) => (
+            <Link
+              href={href}
+              key={index}
+              style={{
+                flex: '0 0 auto',
+                width: '100%',
+                maxWidth: '400px',
+                scrollSnapAlign: 'start',
+              }}
+            >
+              <div
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  backgroundImage: `url(${src})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                }}
+              />
             </Link>
           ))}
         </div>
